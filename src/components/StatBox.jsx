@@ -2,8 +2,12 @@ import React from "react";
 import { Box, Typography, useTheme } from "@mui/material";
 import FlexBetween from "./FlexBetween";
 
-const StatBox = ({ title, value, increase, icon, description }) => {
+const StatBox = ({ title, value, increase, icon, description, isIncrease }) => {
   const theme = useTheme();
+
+  const increaseColor =
+    isIncrease > 0 ? theme.palette.success.main : theme.palette.error.main;
+
   return (
     <Box
       gridColumn="span 2"
@@ -34,7 +38,7 @@ const StatBox = ({ title, value, increase, icon, description }) => {
         <Typography
           variant="h5"
           fontStyle="italic"
-          sx={{ color: theme.palette.secondary.light }}
+          sx={{ color: increaseColor }}
         >
           {increase}
         </Typography>

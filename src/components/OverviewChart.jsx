@@ -68,21 +68,21 @@ const OverviewChart = ({ isDashboard = false, view }) => {
         axis: {
           domain: {
             line: {
-              stroke: theme.palette.primary[200],
+              stroke: "#000000", // Set the axis color to black
             },
           },
           legend: {
             text: {
-              fill: theme.palette.primary[200],
+              fill: "#000000", // Set the text color to black
             },
           },
           ticks: {
             line: {
-              stroke: theme.palette.primary[200],
+              stroke: "#000000", // Set the ticks color to black
               strokeWidth: 1,
             },
             text: {
-              fill: theme.palette.primary[200],
+              fill: "#000000", // Set the text color to black
             },
           },
         },

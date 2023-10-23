@@ -2,7 +2,6 @@ import React from "react";
 import FlexBetween from "components/FlexBetween";
 import Header from "components/Header";
 import {
-  DownloadOutlined,
   Email,
   AttachMoneyOutlined,
   Person2Outlined,
@@ -21,11 +20,6 @@ import {
 import { DataGrid } from "@mui/x-data-grid";
 import StatBox from "components/StatBox";
 import OverviewChart from "components/OverviewChart";
-
-// import BreakdownChart from "components/BreakdownChart";
-// import OverviewChart from "components/OverviewChart";
-// import { useGetDashboardQuery } from "state/api";
-// import StatBox from "components/StatBox";
 
 function Dashboard() {
   const theme = useTheme();
@@ -74,7 +68,6 @@ function Dashboard() {
     { id: 8, lastName: "Frances", firstName: "Rossini", age: 36 },
     { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
   ];
-  //   const { data, isLoading } = useGetDashboardQuery();
   return (
     <Box m="1.5rem 2.5rem">
       <FlexBetween>
@@ -95,6 +88,7 @@ function Dashboard() {
           value={"250+"}
           increase="-3.65%"
           description="Since last week"
+          isIncrease={false}
           icon={
             <Email
               sx={{ color: theme.palette.secondary[300], fontSize: "26px" }}
@@ -105,6 +99,7 @@ function Dashboard() {
           title="Earnings"
           value={"$21.300"}
           increase="+14%"
+          isIncrease={true}
           description="Since last week"
           icon={
             <AttachMoneyOutlined
@@ -126,6 +121,7 @@ function Dashboard() {
           title="Visitors"
           value={"14.212"}
           increase="+14%"
+          isIncrease={true}
           description="Since last week"
           icon={
             <Person2Outlined
@@ -137,6 +133,7 @@ function Dashboard() {
           title="Candidates"
           value={6400}
           increase="+14%"
+          isIncrease={true}
           description="Since last month"
           icon={
             <PersonAddAlt1Outlined

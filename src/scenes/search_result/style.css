@@ -1,0 +1,27 @@
+/* styles.css */
+
+.applied-filter-chip {
+  background-color: #1976d2; /* Blue background color */
+  color: #ffffff; /* White text color */
+  margin: 4px; /* Adjust margin as needed */
+  border-radius: 16px; /* Adds a slight border radius */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.applied-filter-chip .MuiChip-deleteIcon {
+  color: #ffffff; /* Sets the close icon color to white */
+}
+.non-applied-filter-chip {
+  border: 1px solid #1976d2; /* Blue border color */
+  color: #1976d2;
+  background-color: #ffffff; /* Blue text color */
+  margin: 4px; /* Adjust margin as needed */
+  border-radius: 16px; /* Adds a slight border radius */
+}
+
+/* styles.css */
+
+.custom-select {
+  background-color: #424242;
+  color: #ffffff;
+}

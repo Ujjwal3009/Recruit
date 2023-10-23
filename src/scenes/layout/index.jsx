@@ -19,7 +19,7 @@ function Layout() {
         isSidebarOpen={isSidebarOpen}
         setIsSidebarOpen={setIsSidebarOpen}
       />
-      <Box>
+      <Box sx={{ width: "100%" }}>
         <Navbar
           //user={data || {}}
           isSidebarOpen={isSidebarOpen}
